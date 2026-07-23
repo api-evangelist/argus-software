@@ -1,8 +1,31 @@
 aid: argus-software
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/argus-software.png
 name: Argus Software
-description: Argus Software is a company surfaced as a portfolio company of insight-partners and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Argus Software (ARGUS) is a commercial real estate software provider whose
+  products are the industry standard for cash-flow modeling, valuation, asset
+  and investment management, and development-project appraisal for owners,
+  investors, lenders, and advisors. Founded in Houston, Texas and acquired by
+  Altus Group in 2011, the ARGUS product line is now delivered through Altus
+  Group as the ARGUS Intelligence platform and includes ARGUS Enterprise, ARGUS
+  EstateMaster, ARGUS Developer, ARGUS Taliance, ARGUS ValueInsight, ARGUS
+  Voyanta, and Forbury. ARGUS software is used across the global commercial real
+  estate industry to underwrite acquisitions, perform discounted cash-flow
+  analysis, run portfolio and fund analytics, and standardize valuations. As of
+  this enrichment pass ARGUS exposes no public developer portal, OpenAPI
+  description, or self-service API program; its cloud platform is accessed
+  through the Altus Platform / ARGUS Cloud portal.
 url: https://raw.githubusercontent.com/api-evangelist/argus-software/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,11 +33,22 @@ x-backed-by:
 - insight-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment-note: >-
+  argussoftware.com is the historical ARGUS Software domain; the live product,
+  documentation, and support surface is now hosted by Altus Group
+  (altusgroup.com/argus). No public API or developer program was found.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Real Estate
+- Commercial Real Estate
+- PropTech
+- Valuation
+- Asset Management
+- Investment Management
+- Software
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +56,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/argus-software-domain-security.yml
 - type: Website
   url: http://www.argussoftware.com/
+- type: Portal
+  url: https://www.altusgroup.com/argus/
+- type: Documentation
+  url: https://www.altusgroup.com/argus/downloads/
+- type: Support
+  url: https://service.altusgroup.com/s/
+- type: Login
+  url: https://cloud.altusplatform.com/login
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
