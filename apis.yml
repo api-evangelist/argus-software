@@ -37,7 +37,7 @@ x-enrichment-note: >-
   argussoftware.com is the historical ARGUS Software domain; the live product,
   documentation, and support surface is now hosted by Altus Group
   (altusgroup.com/argus). No public API or developer program was found.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-18'
 tags:
